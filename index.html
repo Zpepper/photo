@@ -7,9 +7,16 @@
     <title>our memory</title>
     <style>
         img {
-            width: 20%;
-            margin: 1%;
+            width: 45%;
+            margin: 2%;
             cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            img {
+                width: 20%;
+                margin: 1%;
+            }
         }
 
         .modal {
@@ -27,9 +34,15 @@
         .modal-content {
             margin: auto;
             display: block;
-            width: 80%;
+            width: 90%;
             max-width: 700px;
-            margin-top: 10%;
+            margin-top: 20%;
+        }
+
+        @media (min-width: 768px) {
+            .modal-content {
+                margin-top: 10%;
+            }
         }
 
         .close {
@@ -51,14 +64,14 @@
 
 <body>
     <h1>our memory</h1>
-    <img src="one.jpg" alt="" onclick="openModal(this.src)">
-    <img src="two.jpg" alt="" onclick="openModal(this.src)">
-    <img src="three.jpg" alt="" onclick="openModal(this.src)">
-    <img src="four.jpg" alt="" onclick="openModal(this.src)">
-    <img src="five.jpg" alt="" onclick="openModal(this.src)">
-    <img src="six.jpg" alt="" onclick="openModal(this.src)">
-    <img src="Seven.jpg" alt="" onclick="openModal(this.src)">
-    <img src="eight.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=one.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=two.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=three.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=four.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=five.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=six.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=seven.jpg" alt="" onclick="openModal(this.src)">
+    <img src="=eight.jpg" alt="" onclick="openModal(this.src)">
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImg">
